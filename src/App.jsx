@@ -85,7 +85,7 @@ function App() {
 
         <div className="flex w-full">
           <div className="flex flex-col justify-center items-center bg-[#f1fbff] w-full my-8 py-8 mx-16 rounded-xl">
-            {/* 🔄 Show default QR if not valid */}
+            {/*  Show default QR if not valid */}
             {!valid && (
               <div className="flex flex-col justify-center items-center gap-2">
                 <img src="/frame.png" className="w-60" alt="QR" />
@@ -100,7 +100,7 @@ function App() {
               </div>
             )}
 
-            {/* ✅ Show generated QR if valid link */}
+            {/*  Show generated QR if valid link */}
             {valid &&  (
               <div className="flex flex-col justify-center items-center gap-4">
                 <div id="qr-code" ref={qrRef} className="bg-white p-4 rounded-lg">
